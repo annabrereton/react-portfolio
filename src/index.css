@@ -11,3 +11,146 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.nav-container {
+  width: 100%;
+  margin: 0;
+  padding: 2rem;
+  background-color: #FFFFFF;
+  color: #3B816F;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-navigation {
+  width: 100%;
+}
+
+.menu-buttons {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu-item {
+  color: #3B816F;
+  text-decoration: none;
+}
+
+.menu-item:hover {
+  color: #A16812;
+}
+
+
+.logo {
+  width: 90%;
+  margin: 5rem 0 5rem;
+}
+
+.fade-in-image {
+  animation: fadeIn 11s;
+  transition-timing-function: cubic-bezier(0.42, 0, 1.0, 1.0);
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.logo-name-cv {
+  margin: 1.5rem 0 5rem;
+  font-size: 1.5rem;
+  color: #3B816F;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.name-cv {
+  width: 90%;
+}
+
+h1 {
+  margin: 0;
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
+  color: #3B816F;
+  display: flex;
+}
+
+.cv {
+  text-align: center;
+}
+
+.cv-pdf:hover {
+  color: #A16812;
+}
+
+footer {
+  width: 100%;
+  margin: 0;
+  padding: 0.5rem 2rem 0.5rem;
+  background-color: #EAA743;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer {
+  font-size: 1rem;
+  color: #244C46;
+}
+
+.media-links {
+  color: #244C46;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+/*@media only screen and (min-width: 1000px) {*/
+/*  .logo {*/
+/*    width: 45%;*/
+/*    margin: 0;*/
+/*  }*/
+/*  .logo-name-cv {*/
+/*    width: 90%;*/
+/*    margin: 2rem auto;*/
+/*    justify-content: space-evenly;*/
+/*    align-items: center;*/
+/*  }*/
+/*  .name-cv {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*  }*/
+/*}*/
+
+/*@media only screen and (min-width: 750px) {*/
+/*  .logo {*/
+/*    width: 45%;*/
+/*    margin: 0;*/
+/*  }*/
+/*  .logo-name-cv {*/
+/*    width: 90%;*/
+/*    margin: 4rem auto 5rem;*/
+/*    justify-content: space-evenly;*/
+/*    align-items: center;*/
+/*  }*/
+/*  .name-cv {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*  }*/
+/*}*/
