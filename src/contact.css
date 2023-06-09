@@ -14,15 +14,6 @@ code {
     monospace;
 }
 
-.webpage-body {
-    width: 100vw;
-    height: 80vh;
-    /*position: fixed;*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .contact-container {
     width: 90%;
     height: 100%;

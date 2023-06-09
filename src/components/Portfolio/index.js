@@ -10,20 +10,23 @@ function Portfolio() {
   const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
   const [error, setError] = useState(null)
 
-  useEffect(async () => {
-    const response = await fetch(BASE_URL)
-      .then((res) => {
-        if (!res.ok) {
-          throw new Error("Failed to fetch projects");
-        }
-        return res.json();
-      })
-      .then((data) => {
-        setProjects(data);
-      })
-      .catch((error) => {
-        setError(error.message);
-      });
+  useEffect(() => {
+    const fetchedData = async () => {
+      await fetch(BASE_URL)
+        .then((res) => {
+          if (!res.ok) {
+            throw new Error("Failed to fetch projects");
+          }
+          return res.json();
+        })
+        .then((data) => {
+          setProjects(data);
+        })
+        .catch((error) => {
+          setError(error.message);
+        });
+    }
+    fetchedData()
   }, []);
 
   if (error) {

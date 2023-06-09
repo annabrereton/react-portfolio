@@ -16,7 +16,6 @@ function App() {
   return (
     <BrowserRouter>
       <div className="app-container">
-        <div className="row h-100">
           <Navigation />
           <main className="webpage-body">
             <Routes>
@@ -27,7 +26,6 @@ function App() {
             </Routes>
           </main>
           <Footer />
-        </div>
       </div>
     </BrowserRouter>
   );

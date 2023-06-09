@@ -4,9 +4,7 @@ import {FaGithub, FaLink} from "react-icons/fa";
 function Project({ title, image, description, githubLink, liveLink }) {
   return (
     <div className="project-container">
-      <ul className="project-list">
-        <li className="project-card">
-          <article>
+          <article className="project-card">
             <h3 className="project-title">{title}</h3>
             <img className="project-image" src={image} alt="Project image" />
             <div className="project-description-links">
@@ -23,8 +21,6 @@ function Project({ title, image, description, githubLink, liveLink }) {
               </div>
             </div>
           </article>
-        </li>
-      </ul>
     </div>
   );
 }

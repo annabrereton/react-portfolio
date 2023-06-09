@@ -15,14 +15,6 @@ code {
     monospace;
 }
 
-.webpage-body {
-    width: 100vw;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .about-me-container  {
     width: 90%;
     height: 100%;
