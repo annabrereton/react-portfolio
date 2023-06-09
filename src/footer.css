@@ -1,0 +1,30 @@
+.footer-container {
+    width: 100vw;
+    margin: 0;
+    padding: 0.5rem 0 0.5rem;
+    background-color: #EAA743;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.footer {
+    font-size: 1rem;
+    color: #244C46;
+}
+
+.media-links {
+    margin-right: 2rem;
+    color: #244C46;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.media-links:visited {
+    text-decoration: none;
+}

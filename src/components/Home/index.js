@@ -1,16 +1,18 @@
 import Logo from '../../images/logo.png';
-import Cv from '../../images/cv.pdf';
+import Cv from '../../images/Anna-Brereton-CV.pdf';
+import {FaDownload} from 'react-icons/fa';
+import '../../index.css';
+
 function Home() {
   return (
     <div>
-      <main>
-        <div className="home-logo">
-          <img src={Logo} alt="Anna Brereton logo" />
-        </div>
-        <p>Anna Brereton - Web developer</p>
+      <main className="home-logo-cv" >
+        <img className="home-logo" src={Logo} alt="Anna Brereton logo" />
+        <p className="tagline" >Anna Brereton - Web developer</p>
         <div className="cv-download">
-          <a className="cv" href={Cv} target="_blank" rel="noopener noreferrer">CV
-            <i className="fa-solid fa-download"></i>
+          <p className="cv" >CV</p>
+          <a className="cv" href={Cv} target="_blank" rel="noopener noreferrer">
+            <FaDownload className="download" />
           </a>
         </div>
       </main>

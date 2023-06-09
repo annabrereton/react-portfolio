@@ -1,4 +1,6 @@
 body {
+  width: 100vw;
+  min-height: 100vh;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -12,47 +14,27 @@ code {
     monospace;
 }
 
-.nav-container {
-  width: 100%;
-  margin: 0;
-  padding: 2rem;
-  background-color: #FFFFFF;
-  color: #3B816F;
-  font-size: 1.2rem;
-  position: sticky;
-  top: 0;
-  left: 0;
+.webpage-body {
+  width: 100vw;
+  height: 80vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
-.main-navigation {
-  width: 100%;
-}
-
-.menu-buttons {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  list-style-type: none;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.menu-item {
-  color: #3B816F;
-  text-decoration: none;
-}
-
-.menu-item:hover {
-  color: #A16812;
-}
-
-
-.logo {
+.home-logo-cv {
   width: 90%;
-  margin: 5rem 0 5rem;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  gap: 3rem;
+}
+
+.home-logo {
+  width: 80%;
 }
 
 .fade-in-image {
@@ -65,60 +47,28 @@ code {
   100% { opacity: 1; }
 }
 
-.logo-name-cv {
-  margin: 1.5rem 0 5rem;
-  font-size: 1.5rem;
-  color: #3B816F;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
-  flex: 1;
-}
-
-.name-cv {
+.tagline {
   width: 90%;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #3B816F;
 }
 
-h1 {
-  margin: 0;
-  padding-bottom: 2rem;
+.cv-download {
+  width: 30%;
   font-size: 1.5rem;
   color: #3B816F;
   display: flex;
-}
-
-.cv {
-  text-align: center;
-}
-
-.cv-pdf:hover {
-  color: #A16812;
-}
-
-footer {
-  width: 100%;
-  margin: 0;
-  padding: 0.5rem 2rem 0.5rem;
-  background-color: #EAA743;
-  bottom: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
-.footer {
-  font-size: 1rem;
-  color: #244C46;
+.download:hover {
+  color: #A16812;
 }
 
-.media-links {
-  color: #244C46;
-  font-size: 2rem;
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
+.download:visited {
+  text-decoration: none;
 }
 
 /*@media only screen and (min-width: 1000px) {*/

@@ -1,0 +1,148 @@
+body {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.webpage-body {
+    width: 100vw;
+    height: 80vh;
+    /*position: fixed;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.portfolio-container {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    gap: 1.3rem;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.tagline {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.project-list {
+    width: 90%;
+    margin: 1.5rem auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-between;*/
+}
+
+.project-card {
+    width: 75%;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    align-self: center;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.project-title {
+    margin: 0;
+    padding-bottom: 0.3rem;
+    font-size: 1.2rem;
+    text-align: start;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-links {
+    width: 7rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    /*align-self: end;*/
+}
+
+.project-link {
+    width: 30%;
+    font-size: 1.5rem;
+    color: #3B816F;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.project-link:hover {
+    color: #A16812;
+}
+
+.project-link:visited {
+    text-decoration: none;
+}
+
+.project-description {
+    margin: 0 auto;
+    padding-bottom: 0.3rem;
+    font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 1000px) {
+    .project-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .project-card {
+        width: 90%;
+        margin: 0 auto;
+    }
+    article {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .project-title {
+        width: 100%;
+    }
+    .project-image {
+        width: 45%;
+    }
+    .project-description-links {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .project-links {
+        margin: 0;
+        align-self: end;
+    }
+}

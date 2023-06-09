@@ -1,0 +1,58 @@
+body {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.webpage-body {
+    width: 100vw;
+    height: 80vh;
+    /*position: fixed;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-container {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    gap: 3rem;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.contact-text {
+    width: 70%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.logo-container {
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+}
+
+.contact-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

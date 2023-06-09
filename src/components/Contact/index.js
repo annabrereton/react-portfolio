@@ -1,9 +1,9 @@
 import Logo from "../../images/logo.png";
+import '../../contact.css';
 
 function Contact() {
   return (
     <div className="contact-container">
-      <div className="contact-info">
         <h1>
           Contact me
         </h1>
@@ -12,9 +12,8 @@ function Contact() {
           in
           the footer.
         </p>
-      </div>
-      <div className="contact-logo">
-        <img src={Logo} alt="Anna Brereton logo" />
+      <div className="logo-container">
+        <img className="contact-logo" src={Logo} alt="Anna Brereton logo" />
       </div>
     </div>
   )
