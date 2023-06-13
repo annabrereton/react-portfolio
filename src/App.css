@@ -1,9 +1,27 @@
-
 .app-container {
     width: 100vw;
     height: 100vh;
 }
 
-.webpage-body {
+body {
     width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.webpage-body {
+    width: 90vw;
+    margin: 0 auto;
+    color: #3B816F;
 }

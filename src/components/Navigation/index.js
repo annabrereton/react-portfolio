@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import '../../navigation.css';
+import './navigation.css';
 import { FaHome } from 'react-icons/fa';
 
 function Navigation() {

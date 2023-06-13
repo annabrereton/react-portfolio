@@ -1,11 +1,11 @@
 import ProfilePhoto from '../../images/profile-photo.png';
-import '../../about.css';
+import './about.css';
 
 function About() {
   return (
     <div>
       <main className="about-me-container">
-        <h1>
+        <h1 className="about-title">
           About me
         </h1>
         <div className="photo-container" >

@@ -1,4 +1,4 @@
-import '../../portfolio.css';
+import './portfolio.css';
 import Project from "../../components/Project";
 import {useState} from "react";
 import {useEffect} from "react";
@@ -39,7 +39,7 @@ function Portfolio() {
     );
   };
 
-  // Get the current project based on the currentProjectIndex
+  // Get the current project based on the currennpmtProjectIndex
   const currentProject = projects[currentProjectIndex];
 
   return (
