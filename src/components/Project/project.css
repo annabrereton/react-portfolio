@@ -1,0 +1,142 @@
+.project-container {
+    margin-top: 1rem;
+    padding-bottom: 6rem;
+}
+
+.project-card {
+    width: 75%;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.name-link {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-name {
+    margin: 0;
+    padding-bottom: 0.3rem;
+    font-size: 1.2rem;
+    text-align: start;
+}
+
+.project-link {
+    font-size: 1.5rem;
+    color: #3B816F;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.project-link:hover {
+    color: #A16812;
+}
+
+.project-link:visited {
+    text-decoration: none;
+}
+
+.image-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 0.1rem solid #244C46;
+}
+
+.back-next {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    gap: 1rem;
+}
+
+.project-description {
+    margin: 0 auto;
+    padding-bottom: 0.3rem;
+    font-size: 1.2rem;
+    white-space: pre-line;
+}
+
+.next, .back {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    background-color: #FFFFFF;
+    color: #3B816F;
+}
+
+@media only screen and (min-width: 850px) {
+    .project-container {
+        width: 80%;
+        margin: 2rem auto;
+    }
+
+    .project-card {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    .name-link {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .project-card .project-name {
+        font-size: 2rem;
+    }
+
+    .project-card .project-link {
+        font-size: 3rem;
+    }
+
+    .image-description {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .project-image {
+        width: 50%;
+    }
+
+    .project-description {
+        width: 50%;
+        margin: 0 auto;
+        padding-bottom: 0.3rem;
+        font-size: 1rem;
+        white-space: pre-line;
+    }
+}

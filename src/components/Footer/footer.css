@@ -1,0 +1,37 @@
+.footer-container {
+    width: 100vw;
+    margin: 0;
+    padding: 0.5rem 0 0.5rem;
+    background-color: #EAA743;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.contact-links {
+    text-decoration: none;
+    margin-right: 2rem;
+    color: #244C46 !important;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact-links a:link {
+    text-decoration: none;
+    color: #3B816F !important;
+}
+
+.contact-links a:visited {
+    text-decoration: none;
+    color: #3B816F !important;
+}
+
+.contact-links a:active {
+    text-decoration: none;
+    color: #3B816F !important;
+}
