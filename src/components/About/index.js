@@ -5,9 +5,9 @@ function About() {
   return (
     <div>
       <main className="about-me-container">
-        <h1 className="about-title">
-          About me
-        </h1>
+        {/*<h1 className="about-title">*/}
+        {/*  About me*/}
+        {/*</h1>*/}
         <div className="photo-container" >
           <img className="profile-photo" src={ProfilePhoto} alt="Anna Brereton"/>
         </div>

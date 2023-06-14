@@ -10,10 +10,10 @@
     align-items: center;
 }
 
-.contact-links, a:visited {
+.contact-links {
     text-decoration: none;
     margin-right: 2rem;
-    color: #244C46;
+    color: #244C46 !important;
     font-size: 2rem;
     display: flex;
     flex-direction: row;
@@ -21,7 +21,17 @@
     gap: 2rem;
 }
 
-.contact-links, a.email-link:visited {
+.contact-links a:link {
     text-decoration: none;
-    color: #244C46;
+    color: #3B816F !important;
+}
+
+.contact-links a:visited {
+    text-decoration: none;
+    color: #3B816F !important;
+}
+
+.contact-links a:active {
+    text-decoration: none;
+    color: #3B816F !important;
 }

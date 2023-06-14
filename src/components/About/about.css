@@ -31,9 +31,9 @@
     text-align: center;
 }
 
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 800px) {
     .about-me-container {
-        margin: 3rem auto;
+        margin: 5rem auto;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -58,7 +58,7 @@
 
 @media only screen and (min-width: 1000px) {
     .about-me-container {
-        margin: 0 auto;
+        margin: 7rem auto;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
