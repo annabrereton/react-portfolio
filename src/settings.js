@@ -1,3 +1,3 @@
-const BASE_URL = 'https://abportfolioservice.onrender.com'
+const BASE_URL = 'https://portfolioserviceab.onrender.com'
 
 export default BASE_URL
