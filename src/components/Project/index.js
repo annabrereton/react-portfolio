@@ -9,6 +9,10 @@ function Project({ projects }) {
   const { currentProjectIndex } = useParams();
   const project = projects[currentProjectIndex];
 
+  if (!project) {
+    return <div></div>;
+  }
+
   const navigateToNextProject = () => {
     const nextIndex = (parseInt(currentProjectIndex) + 1) % projects.length;
     window.location.href = `/project/${nextIndex}`;
