@@ -9,10 +9,6 @@ function Project({ projects }) {
   const { currentProjectIndex } = useParams();
   const project = projects[currentProjectIndex];
 
-  if (!project) {
-    return <div>Project not found</div>;
-  }
-
   const navigateToNextProject = () => {
     const nextIndex = (parseInt(currentProjectIndex) + 1) % projects.length;
     window.location.href = `/project/${nextIndex}`;
@@ -44,39 +40,3 @@ function Project({ projects }) {
 }
 
 export default Project;
-
-
-// import { FaGithub } from "react-icons/fa";
-// import React from 'react';
-//
-// function Project({ projects, currentProject, currentProjectIndex, navigateToNextProject }) {
-//   if (!currentProject) {
-//     return <div>Project not found</div>;
-//   }
-//   console.log(currentProject.image)
-//   console.log(currentProject.title)
-//   console.log(currentProject.description)
-//   const { title, image, description, githubLink } = currentProject;
-//
-//   return (
-//     <div className="project-container">
-//       <article className="project-card">
-//         <h3 className="project-name">{currentProject.title}</h3>
-//         <div className="image-description">
-//           <img className="project-image" src={currentProject.image} alt={currentProject.title} />
-//           <p>{currentProject.description}</p>
-//         </div>
-//         <div className="link-next">
-//           <a className="project-link" href={currentProject.githubLink} aria-label="github">
-//             <FaGithub />
-//           </a>
-//           <button onClick={navigateToNextProject} className="next">
-//             Next &gt;
-//           </button>
-//         </div>
-//       </article>
-//     </div>
-//   );
-// }
-//
-// export default Project;
